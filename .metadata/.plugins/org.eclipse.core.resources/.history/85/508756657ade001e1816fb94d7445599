@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+int find_Unique_number(int arr[], int len) {
+	int unique = 0;
+	for (int i = 0; i < len; i++) {
+		unique ^= arr[i];
+	}
+	return unique;
+}
+
+int main() {
+	int len1;
+	int len2;
+	int arr1[7]={4,2,5,2,5,7,4};
+	int arr2[3]={4,2,4};
+	len1 = sizeof(arr1) / sizeof(arr1[0]);
+	len2 = sizeof(arr2) / sizeof(arr2[0]);
+	printf("The unique number is: %d\n", find_Unique_number(arr1, len1));
+	printf("The unique number is: %d\n", find_Unique_number(arr2, len2));
+	return 0;
+}

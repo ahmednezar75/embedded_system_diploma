@@ -1,0 +1,6 @@
+06:15:01 **** Incremental Build of configuration Debug for project HW-3 ex6 ****
+Info: Internal Builder is used for build
+gcc -o "HW-3 ex6.exe" main.o 
+
+06:15:01 Build Finished (took 455ms)
+

@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+
+#include "stdio.h"
+int check(int x)
+{
+	if (x%3 ==0)
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
+}
+int main()
+{
+	int x;
+	int result;
+	printf("enter the value of x:");
+	fflush(stdout);
+	scanf("%d",&x);
+	result=check(x);
+			printf("%d",result);
+}

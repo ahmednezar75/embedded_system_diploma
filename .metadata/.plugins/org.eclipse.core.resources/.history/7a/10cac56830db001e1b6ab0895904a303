@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+
+#include "Stdio.h"
+int prime(int t,int x)
+{
+	int f;
+	for(int i=2;i<x;i++)
+	{
+	 f=t+i-1;
+	for(int j=2;j<x;j++)
+	{
+	 if (f%i==0)
+	{
+		printf("%d",f);
+	}
+	}
+	}
+	return f;
+}
+void main()
+{
+	int x,y;
+	printf("enter first number:\n");
+	fflush(stdout);
+	scanf("%d",&x);
+	printf("enter second number:\n");
+	fflush(stdout);
+	scanf("%d",&y);
+	prime(x,y);
+
+}
+
+

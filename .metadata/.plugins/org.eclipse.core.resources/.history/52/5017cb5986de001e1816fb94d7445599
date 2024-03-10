@@ -1,0 +1,39 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include <stdio.h>
+#include <string.h>
+void reverse(char str[], int x, int y) {
+    while (x < y) {
+        char temp = str[x];
+        str[x] = str[y];
+        str[y] = temp;
+        x++;
+        y--;
+    }
+}
+void reverseWords(char str[],int length)
+{
+    reverse(str, 0, length - 1);
+        int x = 0;
+        for (int y= 0; y <= length; y++)
+        {
+            if (str[y] == ' ' || str[y] == '\0')
+            {
+                reverse(str, x, y - 1);
+                x = y + 1;
+            }
+        }
+}
+
+int main() {
+    char str[] = "mohamed gamal";
+    printf("Original word: %s\n", str);
+    int length = strlen(str);
+    reverseWords(str,length);
+    printf("Reversed word: %s\n", str);
+}

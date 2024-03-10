@@ -1,0 +1,44 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+
+#include <stdio.h>
+
+int is_prime(int num) {
+    if (num <= 1) {
+        return 0; // 0 and 1 are not prime numbers
+    }
+    for (int i = 2; i <= num; i++) {
+        if (num % i == 0) {
+            return 0; // If num is divisible by i, it's not prime
+        }
+    }
+    return 1; // If num is not divisible by any number up to sqrt(num), it's prime
+}
+
+int main() {
+    int start, end;
+
+    printf("Enter the start number: ");
+    fflush(stdout);
+    scanf("%d", &start);
+
+    printf("Enter the end number: ");
+    fflush(stdout);
+    scanf("%d", &end);
+
+    printf("Prime numbers between %d and %d are: ", start, end);
+    for (int i = start; i <= end; i++) {
+        if (is_prime(i)) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+}
+
+
+

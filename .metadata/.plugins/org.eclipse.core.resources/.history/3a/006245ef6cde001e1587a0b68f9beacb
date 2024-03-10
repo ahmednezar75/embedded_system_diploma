@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+
+int reverse(int n)
+{
+	int res,y;
+	while(n!=0)
+	{
+		y=n%10;
+		res=res*10+y;
+		n/=10;
+
+	}
+	return res;
+}
+int main()
+{
+	int n;
+	printf("enter the number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	printf("the reverse is:%d",reverse(n));
+
+}
+

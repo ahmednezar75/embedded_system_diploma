@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+int main()
+{
+	int num_elements, i;
+	int z[100];
+	printf("enter no of elements:")	;
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&num_elements);
+	int elements[num_elements];
+
+	printf("Enter the elements: ");
+	fflush(stdin);fflush(stdout);
+	for (i = 0; i < num_elements; i++)
+	{
+		scanf("%d", &elements[i]);
+	}
+
+	printf("The elements are: ");
+	fflush(stdin);fflush(stdout);
+	for (i = 0; i < num_elements; i++)
+	{
+		printf("%d ", elements[i]);
+	}
+
+}
+

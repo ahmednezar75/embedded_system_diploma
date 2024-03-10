@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+
+#include "stdio.h"
+#include "string.h"
+int main()
+{
+	int y;
+	char c[100];
+	char z[100]={"try hard"};
+	printf("enter a string:");
+		fflush(stdout);
+	gets(c);
+	y=strcmp(c,z);
+	if (y==0)
+	{
+		printf("the username is not the same");
+	}
+	else
+	{
+		printf("the username is the same");
+	}
+}

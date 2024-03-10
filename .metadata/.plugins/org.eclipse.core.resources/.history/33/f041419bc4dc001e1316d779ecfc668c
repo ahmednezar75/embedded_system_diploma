@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+int main()
+{
+	int x;
+	printf("enter no of elements:")	;
+		fflush(stdin);fflush(stdout);
+		scanf("%d",&x);
+		for(int i=1;i<=x;i++)
+		{
+			printf("%d%d\t",x,x);
+		}
+}
+

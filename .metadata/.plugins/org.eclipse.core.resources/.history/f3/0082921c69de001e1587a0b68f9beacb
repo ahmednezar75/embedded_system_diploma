@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+
+int square_root(int l)
+{
+	sqrt(l);
+	return l;
+
+
+int main()
+{
+	int n;
+	printf("enter the number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	printf("the square root is:%d",square_root(n));
+
+
+}

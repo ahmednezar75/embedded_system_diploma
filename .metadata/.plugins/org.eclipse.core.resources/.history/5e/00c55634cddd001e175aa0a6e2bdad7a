@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+
+int sum(int n)
+{
+	int sum2;
+	if (n>0)
+	{
+
+		return n+sum(n-1);
+	}
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	int n=100;
+	printf("the value=%d",sum(n));
+
+
+}

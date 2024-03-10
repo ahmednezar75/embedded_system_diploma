@@ -1,0 +1,10 @@
+06:10:19 **** Incremental Build of configuration Debug for project 5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:23:2: error: expected ';' before 'scanf'
+  scanf("%d", &n);
+  ^~~~~
+
+06:10:19 Build Finished (took 312ms)
+

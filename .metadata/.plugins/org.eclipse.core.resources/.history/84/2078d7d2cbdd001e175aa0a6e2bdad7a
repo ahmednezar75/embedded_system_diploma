@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 1, 2024
+ *      Author: ahmed
+ */
+
+#include "stdio.h"
+
+int change_bit(int x,int y)
+{
+
+	x &= ~(1<<y);
+		return x;
+}
+int main()
+{
+	int x,bit;
+	printf("enter the number:");
+	fflush(stdout);
+	scanf("%d",&x);
+	printf("enter the bit position:");
+	fflush(stdout);
+	scanf("%d",&bit);
+	printf("result=%d",change_bit(x,bit));
+
+}
